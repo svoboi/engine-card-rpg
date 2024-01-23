@@ -1,0 +1,359 @@
+{
+  "usedCards": null,
+  "cardsVisibility": 0,
+  "noOfCardsInHand": 2,
+  "onTurn": 0,
+  "players": [
+    {
+      "defense": 10,
+      "defenseMax": 50,
+      "healthPoints": 50,
+      "healthPointsMax": 100,
+      "isAI": false,
+      "mana": 50,
+      "manaMax": 60,
+      "manaRefillSpeed": 3,
+      "name": "Legolas",
+      "offense": 15,
+      "offenseMax": 20,
+      "offenseRefillSpeed": 2
+    },
+    {
+      "defense": 10,
+      "defenseMax": 50,
+      "healthPoints": 50,
+      "healthPointsMax": 100,
+      "isAI": true,
+      "mana": 50,
+      "manaMax": 60,
+      "manaRefillSpeed": 3,
+      "name": "Thranduil",
+      "offense": 15,
+      "offenseMax": 20,
+      "offenseRefillSpeed": 2
+    }
+  ],
+  "cardsInDeck": [
+    {
+      "name": "Defense training",
+      "description" :"Increase defense by 3",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 10
+        }
+      ]
+    },
+    {
+      "name": "Elven shield",
+      "description" :"Increase defense by 5",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Mastery of evasion",
+      "description" :"Increase defense by 10",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": 10
+        }
+      ]
+    },
+
+    {
+      "name": "strength training",
+      "description" :"Increase HP by 5",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Nutritious rations",
+      "description" :"Increase HP by 10",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 10
+        }
+      ]
+    },
+    {
+      "name": "Elven vitality",
+      "description" :"Increase HP by 10",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 10
+        }
+      ]
+    },
+
+    {
+      "name": "Swift strike",
+      "description" :"Deal 5 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 5
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -2
+        }
+      ]
+    },
+    {
+      "name": "Hunter's shot",
+      "description" :"Deal 10 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 10
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -5
+        }
+      ]
+    },
+    {
+      "name": "Elven blade dance",
+      "description" :"Deal 15 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 15
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -7
+        }
+      ]
+    },
+
+    {
+      "name": "Elven intimidation",
+      "description" :"Steal 5 HP",
+      "effectsOnEnemy": [
+        {
+          "type": "HP",
+          "strength": -5
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Rain of 1000 arrows",
+      "description" :"Deal 15 damage at the cost of 10 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 20
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -10
+        }
+      ]
+    },
+    {
+      "name": "Summon a magic barrier",
+      "description" :"Gain 8 defense at the cost of 5 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -5
+        },
+        {
+          "type": "defense",
+          "strength": 8
+        }
+      ]
+    },
+
+    {
+      "name": "Sword sharpening",
+      "description" :"Gain 2 offense",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "name": "Archery precision",
+      "description" :"Deal 5 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 10
+        }
+      ],
+      "effectsOnMe": null
+    },
+    {
+      "name": "Elven mastery of all arms",
+      "description" :"Gain 6 offense",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": 3
+        }
+      ]
+    },
+
+    {
+      "name": "Small mana potion",
+      "description" :"Gain 5 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Large mana potion",
+      "description" :"Gain 10 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 10
+        }
+      ]
+    },
+    {
+      "name": "Elven meditation",
+      "description" :"Gain 15 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 15
+        }
+      ]
+    },
+
+    {
+      "name": "Mana drain",
+      "description" :"Steal 5 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "mana",
+          "strength": -5
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Second breath",
+      "description" :"Lose 4 defense, but gain 8 HP",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": -4
+        },
+        {
+          "type": "HP",
+          "strength": 8
+        }
+      ]
+    },
+    {
+      "name": "Elven encouragement",
+      "description" :"Gain 5 defense and 5 HP",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 5
+        },
+        {
+          "type": "defense",
+          "strength": 5
+        }
+      ]
+    },
+
+    {
+      "name": "Elven agility",
+      "description" :"Lower enemy offense by 2 at the cost of 5 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "offense",
+          "strength": -2
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -5
+        }
+      ]
+    },
+    {
+      "name": "Enfeeble",
+      "description" :"Lower enemy HP by 10 and offense by 5 at the cost of 15 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "HP",
+          "strength": -10
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -15
+        }
+      ]
+    }
+  ] ,
+  "cardsQuantities": [
+    2, 2, 1,
+    3, 2, 1,
+    10, 9, 8,
+    3, 5, 2,
+    2, 2, 1,
+    1, 1, 2,
+    2, 1, 5,
+    5, 4]
+}

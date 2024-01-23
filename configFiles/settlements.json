@@ -1,0 +1,350 @@
+{
+  "usedCards": null,
+  "cardsVisibility": 0,
+  "noOfCardsInHand": 2,
+  "onTurn": 0,
+  "players": [
+    {
+      "defense": 10,
+      "defenseMax": 50,
+      "healthPoints": 50,
+      "healthPointsMax": 100,
+      "isAI": false,
+      "mana": 50,
+      "manaMax": 60,
+      "manaRefillSpeed": 3,
+      "name": "Rochester",
+      "offense": 15,
+      "offenseMax": 20,
+      "offenseRefillSpeed": 2
+    },
+    {
+      "defense": 10,
+      "defenseMax": 50,
+      "healthPoints": 50,
+      "healthPointsMax": 100,
+      "isAI": true,
+      "mana": 50,
+      "manaMax": 60,
+      "manaRefillSpeed": 3,
+      "name": "Canterbury",
+      "offense": 15,
+      "offenseMax": 20,
+      "offenseRefillSpeed": 2
+    }
+  ],
+  "cardsInDeck": [
+    {
+      "name": "Build a wall",
+      "description": "Increase defense by 2",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "name": "Build a tower",
+      "description": "Increase defense by 5",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Fortified defenses",
+      "description": "Increase defense by 10",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": 10
+        }
+      ]
+    },
+
+    {
+      "name": "Castle repair",
+      "description": "Increase HP by 2",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "name": "Castle improvements",
+      "description": "Increase HP by 5",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Castle renovation",
+      "description": "Increase HP by 10",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 10
+        }
+      ]
+    },
+
+    {
+      "name": "Infantry attack",
+      "description": "Deal 5 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 5
+        }
+      ],
+      "effectsOnMe": null
+    },
+    {
+      "name": "Cavalry attack",
+      "description": "Deal 5 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 10
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -5
+        }
+      ]
+    },
+    {
+      "name": "Siege weapons attack",
+      "description": "Deal 10 damage",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 20
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -10
+        }
+      ]
+    },
+
+    {
+      "name": "Sabotage",
+      "description": "Steal 5 HP",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 10
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": -5
+        }
+      ]
+    },
+    {
+      "name": "Call a dragon",
+      "description": "Deal 15 damage at the cost of 10 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "attack",
+          "strength": 15
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -10
+        }
+      ]
+    },
+    {
+      "name": "Summon defenses",
+      "description": "Gain 8 defense at the cost of 5 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -5
+        },
+        {
+          "type": "defense",
+          "strength": 8
+        }
+      ]
+    },
+
+    {
+      "name": "Build barracks",
+      "description": "Gain 2 offense",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "name": "Military training",
+      "description": "Gain 4 offense",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "offense",
+          "strength": 4
+        }
+      ]
+    },
+    {
+      "name": "Small mana potion",
+      "description": "Gain 5 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 5
+        }
+      ]
+    },
+
+    {
+      "name": "Large mana potion",
+      "description": "Gain 10 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 10
+        }
+      ]
+    },
+    {
+      "name": "Wizard gathering",
+      "description": "Gain 15 mana",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 15
+        },
+        {
+          "type": "defense",
+          "strength": -10
+        }
+      ]
+    },
+    {
+      "name": "Mana steal",
+      "description": "Steal 5 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "mana",
+          "strength": -5
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": 5
+        }
+      ]
+    },
+
+    {
+      "name": "Reserves",
+      "description": "Lose 4 defense, but gain 8 HP",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "defense",
+          "strength": -4
+        },
+        {
+          "type": "HP",
+          "strength": 8
+        }
+      ]
+    },
+    {
+      "name": "Wall reinforcements",
+      "description": "Gain 5 defense and 5 HP",
+      "effectsOnEnemy": null,
+      "effectsOnMe": [
+        {
+          "type": "HP",
+          "strength": 5
+        },
+        {
+          "type": "defense",
+          "strength": 5
+        }
+      ]
+    },
+    {
+      "name": "Weaken swords",
+      "description": "Lower enemy offense by 2 at the cost of 5 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "offense",
+          "strength": -2
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -5
+        }
+      ]
+    },
+
+    {
+      "name": "Cast a curse",
+      "description": "Lower enemy HP by 10 and offense by 5 at the cost of 15 mana",
+      "effectsOnEnemy": [
+        {
+          "type": "offense",
+          "strength": -5
+        },
+        {
+          "type": "HP",
+          "strength": -10
+        }
+      ],
+      "effectsOnMe": [
+        {
+          "type": "mana",
+          "strength": -15
+        }
+      ]
+    }
+  ],
+  "cardsQuantities": [2, 2, 1,
+    3, 2, 1,
+    10, 9, 8,
+    3, 5, 2,
+    2, 2, 1,
+    1, 1, 2,
+    2, 1, 5,
+    5]
+}
